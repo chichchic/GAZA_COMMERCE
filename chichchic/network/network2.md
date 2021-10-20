@@ -75,7 +75,7 @@ U_sender = (L/R) / (L/R) + RTT => (링크 사용시간 / 패킷을 한번 보내
 이 방식은 효율이 좋지 않다. 이를 극복하기 위해 pipelining으로 해결한다.
 
 ### pipelined protocols
-**![Screen Shot 2021-10-19 at 10.16.49 PM](/Users/pch/Library/Application Support/typora-user-images/Screen Shot 2021-10-19 at 10.16.49 PM.png)
+**![Screen Shot 2021-10-19 at 10.16.49 PM](https://raw.githubusercontent.com/chichchic/GAZA_COMMERCE/main/chichchic/images/GBN_SR.png)
 
 **Go-Back-N**
 N개의 packet을 연속으로 보낸다.
