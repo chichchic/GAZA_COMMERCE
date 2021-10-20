@@ -526,11 +526,24 @@
 * 둘 다 Backing Store를 사용해 메모리를 관리한다.
 * Swapping은 프로세스 단위로 사용하고, Demading Paging은 페이지 단위로 사용한다.
 
+# Global Replacement vs Local Replacement
+* Global Replacement
+  * 메모리 상의 모든 프로세스 페이지에 대해서 페이지 교체가 일어난다.
+  * Local Replacement보다 메모리 
+* Local Replacement
+  * 메모리 상의 자신의 프로세스 페이지에 대해서 페이지 교체가 일어난다.
 
-
-
-
-
+# 쓰레싱(Thrashing)
+* 일정한 범위 내에서는 메모리에 올라가는 프로세스의 개수가 많을 수록 CPU의 이용률이 증가한다.
+* 쓰레싱은 메모리에 올라가는 프로세스의 개수가 일정 범위를 넘어가면, CPU의 이용률이 감소하는 현상이다.
+* 원인
+  * 프로세스가 많을수록 비어있는 프레임이 줄고, 결국 모든 프레임이 가득 찰 수가 있다.
+  * 프레임이 가득차게 되면 페이지 교체가 일어나게 되고, 프로세스의 개수가 많을 수록 자주 일어나게 된다.
+  * 페이지 교체에서 Page in/out은 I/O 작업으로 CPU를 사용하지 않는다.
+  * 따라서, 과도한 페이지 교체로 인해 I/O 작업이 증가하고, CPU 이용률이 줄게 된다.
+* 해결 방법
+  * Global Replacement보다 LocalReplacement를 사용
+    * 메모리
 
 
 
