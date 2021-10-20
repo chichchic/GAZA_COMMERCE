@@ -123,8 +123,8 @@ RTT는 매 시간마다 측정한다. 이때, 재전송한 Seg의 RTT는 제외�
 항상 측정된 값에만 의존할 경우 변화 폭이 너무 크기에 Estimated RTT를 사용한다.
 *ERTT = (1 - a) * ERTT + a * Sample RTT, a = 0.125(공학적 결정으로 변경 가능하다)*
 *Timout Interval = ERTT + 4 * DevRtt, DevRtt = Safety margin*
-실제 데이터 전송시 Timeout Interval보다 큰 값들이(?) 많아 safety margin을 준 Timeout Interval을 사용한다.
-
+실제 데이터 전송시 Timeout Interval보다 큰 값들이 많아 safety margin을 준 Timeout Interval을 사용한다.
+TODO: 왜 실제 데이터 전송시 Timeout Interval보다 큰 값들이 많지
 ### reliable data transfer
 send buff(재전송을 위해)와 recv buff(순서가 맞지 않게 도착한 경우를 위해)를 사용한다.
 TCP는 window 크기만큼만 data를 보낼 수 있다.

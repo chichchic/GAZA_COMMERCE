@@ -118,7 +118,8 @@ proxy는 origin server로 요청한다. 동일한 request의 경우 proxy에서 
 proxy: traffic 감소 -> 비용 감소
 **단점**
 cache와 서버 사이에 동기화 문제 발생
-보안상의 Issue가 존재.(?)
+보안상의 Issue가 존재.
+TODO: 어떤 보안상의 Issue가 존재하지? 오히려 안전한거 아닌가.
 
 ## cache
 사용하려는 Data를 미리 가져다 두는 일
