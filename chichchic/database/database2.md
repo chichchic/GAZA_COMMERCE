@@ -37,15 +37,18 @@ CREATE
 ALERT
 DROP
 RENAME
-TRUNCA
-TE
+TRUNCATE(데이터만 전부 삭제, 테이블은 유지)
 
 ## DCL
-GRANT
-REVOKE
+GRANT(권한 주기)
+REVOKE(권한 뺏기)
 
 ## DML
 SELECT
 INSERT
 UPDATE
 DELETE
+
+## TCL(transaction 관리)
+COMMIT
+ROLLBACK
