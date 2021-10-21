@@ -278,7 +278,7 @@ AS 사이에 routing: interAS. 다른 routing protocol을 사용할 수도 있�
 목적지가 intraAS안에 있으면 intra routing protocol만 사용하면 되지만, interAS에 있을 경우 둘 다 사용해야한다.
 
 *interAS routing의 역할*
-TODO: gateway가 뭐지?
+gateway: 현재 사용자가 위치한 네트워크에서 다른 네트워크로 가기 위해 반드시 거쳐야 하는 거점을 의미.
 밖으로 나가는 datagram을 받을 경우 gateway로 forwarding후 밖으로 보낸다.
 reachable information(prefix 및 그 길이로 표현된 정보)을 주변에 전파해야한다.
 
@@ -297,7 +297,6 @@ security: 인증을 서로 한 후 정보 교환
 한개의 source에서 동일한 destination까지 동일 cost 경로 제작 가능. load balancing에 좋다.
 TOS(type of service) 서로다른 servicec에 다라 cost를 다르게 할수 있다.
 uni-cost, multi-cost 지원
-TODO: uni-cost multi-cost가 뭘까.
 계층적으로 OSPF 구성이 가능하다.(large domain에서)
 => area border router를 묶어주는 backbone
 => backbone을 묶어주는 boundary router가 존재한다.

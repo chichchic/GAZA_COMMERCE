@@ -63,7 +63,6 @@ initially CWND = 1MSS(maximum segment size * TCP sending rate, rate 는 CWND / R
 *timeout이 3duplicate보다 나쁜 상황이다*
 timeout은 1MSS로 설정, ssthresh값은 현재의 1/2로 설정한다.
 3duplicate 되지 않도록 thresh hold 값을 넘은 후에는 점진적으로 증가한다.(congestion이 일어나지 않을것이라 가정)
-TODO: 이게 무슨소리지... 점진적으로 증가하는데 congestion이 일어나지 않을것이라 가정?
 
 ### TCP throughput
 네트워크에 의해 결정되는 요소, 고정값이 아니다.

@@ -114,7 +114,7 @@ request를 proxy에 요청한다.
 proxy는 origin server로 요청한다. 동일한 request의 경우 proxy에서 바로 응답한다.
 **장점**
 서버: load balancing
-클라이언트: Qkfms threh
+클라이언트: 빠른 속도
 proxy: traffic 감소 -> 비용 감소
 **단점**
 cache와 서버 사이에 동기화 문제 발생
