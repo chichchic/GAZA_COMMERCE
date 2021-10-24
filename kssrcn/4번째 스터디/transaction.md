@@ -40,10 +40,10 @@
 
 트랜잭션의 격리수준은 트랜잭션의 특성인 **Isolation**을 지원합니다. 트랜잭션의 격리수준으로 다음과 같습니다.
 
-* Read Uncommited
-* Read Commited
-* Repeatable Read
-* Serializable
+* **Read Uncommited**
+* **Read Commited**
+* **Repeatable Read**
+* **Serializable**
 
 Read Uncommited 격리수준은 거의 사용되지 않기 때문에 해당 글에서는 다른 3가지의 격리수준만 다루겠습니다.
 
