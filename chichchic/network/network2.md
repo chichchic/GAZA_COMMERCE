@@ -107,7 +107,7 @@ window 밖에 있을 경우 무시한다.
 따라서 window size를 줄이거나 seq#를 늘려야한다.(window size의 2배 이상으로 seq#를 설정해야 함)
 
 ## TCP:overview
-P2P: one sender 2 on receiver 매칭 (1:1)
+P2P: one sender 2 one receiver 매칭 (1:1)
 reliable, pipelined(병렬적인 수행), full duplex data(양쪽 모두 server, receiver가 된다.)
 connection-oriented(connection이 맺어져야 시작), flow controlled(네트워크.receiver의 상황에 맞춰 속도 결정)
 
